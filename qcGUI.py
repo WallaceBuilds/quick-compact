@@ -1,3 +1,8 @@
+# QuickCompact 0.9.0
+# September 13, 2018
+# Managed by WallaceBuilds
+# Please refer to the README for general information.
+
 from tkinter import *
 from tkinter import filedialog
 from PIL import Image
@@ -276,6 +281,7 @@ class qcGUI:
         self.label3.bind("<Leave>", self.leave)
         
         self.slidera = Scale(master, from_=1, to=100, orient=HORIZONTAL)
+        self.slidera.set(100)
         self.slidera.place(x=140,y=65)
         
         self.opti = False
