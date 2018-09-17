@@ -18,7 +18,7 @@ JPG Quality - A slider that ranges from 1 to 100, its purpose is to allow the us
 
 Optimize - This function has the potential to decrease the file size of each image at the sake of increasing the amount of time the batch will take.
 
-Compress Ratio - A slider that ranges from 16 to 2, it determines the final, reduced size of each image. For example, a compress ratio of 2 will divide the original image's x and y values by 2, whereas a compress ratio of 16 divides the original image's x and y values by 16. This slider defaults at 2, which is technically a 4:1 compression.
+Compress Ratio - A slider that ranges from 16 to 1, it determines the final, reduced size of each image. For example, a compress ratio of 2 will divide the original image's x and y values by 2, whereas a compress ratio of 16 divides the original image's x and y values by 16. This slider defaults at 4.
 
 
 --- Dev Notes ---
