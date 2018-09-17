@@ -8,19 +8,11 @@
 
 Source Directory - This is the folder/directory that the program will draw files from. The program is not currently built to pull files discriminately, so all files in the directory will be passed to the compression function and then verified to be compatible image files.
 
-<<<<<<< HEAD
 NOTE: If this section is not filled in, users will be asked to complete it with a dialogue between the "Compress" and "Cancel" buttons.
 
 Destination Directory - This is the folder/directory that the program will place compressed files into. Since the program is not currently designed to rename files as they are processed, choosing the Source Directory as the Destination Directory will result in a total overwrite of all image files that are passed through the compression function. At the confirmation window, a special dialogue will warn users that this is the intended function.
 	
 NOTE: If this section is not filled in, users will be asked to complete it with a dialogue between the "Compress" and "Cancel" buttons.
-=======
-If this section is not filled in, users will be asked to complete it with a dialogue between the "Compress" and "Cancel" buttons.
-
-Destination Directory - This is the folder/directory that the program will place compressed files into. Since the program is not currently designed to rename files as they are processed, choosing the Source Directory as the Destination Directory will result in a total overwrite of all image filesthat are passed through the compression function. At the confirmation window, a special dialogue will warn users that this is the intended function.
-	
-If this section is not filled in, users will be asked to complete it with a dialogue between the "Compress" and "Cancel" buttons.
->>>>>>> c9fd8a1e2db20be380bc8d5d76f8788e7c4e469f
 
 JPG Quality - A slider that ranges from 1 to 100, its purpose is to allow the user to manually set the quality of JPG images. Doing this also allows them to increase or decrease the file size of each JPG image. This slider defaults at 100, which is a full quality compression.
 
@@ -33,7 +25,6 @@ Compress Ratio - A slider that ranges from 16 to 2, it determines the final, red
 
 - The program is functioning as anticipated on a Windows 10 machine, using Spyder as the IDE of choice.
 
-<<<<<<< HEAD
 - When running on a Raspberry Pi (Raspbian Stretch with Python 3.5) I had an issue getting the QuickCompact .ico recognized by the machine. I commented this out and it began running as expected (even the browse buttons were working). The GUI was not very clean like it is when running on Windows, this is due to each item being placed on the frame rather than being gridded onto the plane. I personally find the grid form of the program to be horrendous looking, but I may make a separate branch to make it prettier on Linux/other machines.
 
 - That time estimation algorithm is quick and dirty. I personally wish to revise it and find a way to make it accurate, but this will likely take some serious time.
@@ -45,17 +36,6 @@ Compress Ratio - A slider that ranges from 16 to 2, it determines the final, red
 - Optimize doesn't always make a filesize smaller, which is not at all what I expect when using it. Not sure why this is, but it could be a shortcoming of the PIL library.
 
 - Speaking of shortcomings of the PIL library, I would like to see about replacing PIL with the actively-updated Pillow library. From what I have researched, PIL has become abandonware. This is unfortunate, but changing over to Pillow may make some fixes easier to implement, such as making the Quality slider more applicable to other file formats.
-=======
-When running on a Raspberry Pi (Raspbian Stretch with Python 3.5) I had an issue getting the QuickCompact .ico recognized by the machine. I commented this out and it began running as expected (even the browse buttons were working). The GUI was not very clean like it is when running on Windows, this is due to each item being placed on the frame rather than being gridded onto the plane. I personally find the grid form of the program to be horrendous looking, but I may make a separate branch to make it prettier on Linux/other machines.
-
-That time estimation algorithm is quick and dirty. I personally wish to revise it and find a way to make it accurate, but this will likely take some serious time. 
-
-I would like to make JPG Quality applicable to other file formats as well, but this will take a lot more lines of code to complete, as each file type requires a different process in order to change its "quality".
-
-Optimize doesn't always make a filesize smaller, which is not at all what I expect when using it. Not sure why this is, but it could be a shortcoming of the PIL library.
-
-Speaking of shortcomings of the PIL library, I would like to see about replacing PIL with the actively-updated Pillow library. From what I have researched, PIL has become abandonware. This is unfortunate, but changing over to Pillow may make some fixes easier to implement, such as making the Quality slider moreapplicable to other file formats.
->>>>>>> c9fd8a1e2db20be380bc8d5d76f8788e7c4e469f
 
 - I would like to separate the compression method into new methods, and make compression a class. This will be a small undertaking, but nothing too serious.
 
